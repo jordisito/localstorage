@@ -1,0 +1,103 @@
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.Header {
+    padding: 1rem;
+    text-align: center;
+}
+
+.Header-title,
+.ListaTareas-title {
+    font-weight: normal;
+}
+
+.ListaTareas {
+    display: flex;
+    flex-direction: column;
+}
+
+.ListaTareas-name {
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: bold;
+    font-size: .7rem;
+}
+
+.ListaTareas-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.ListaTareas-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.tweet {
+    padding: .5rem;
+}
+
+button.ListaTareas-btn {
+    display: block;
+    margin-top: 1rem;
+    padding: .5rem;
+    font-size: .7rem;
+    text-transform: uppercase;
+    background-color: #6eb4ef;
+    color: white;
+    border: 0;
+    border-radius: .2rem;
+    cursor: pointer;
+}
+
+.ListaTareas-tweets {
+    margin-top: 2rem;
+}
+
+.ListaTareas-title {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.ListaTareas-tweets-item {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+}
+
+@media screen and (min-width: 48em) {
+    .ListaTareas {
+        flex-direction: row;
+    }
+    .ListaTareas-form {
+        flex: 1 1 50%;
+    }
+    .ListaTareas-tweets {
+        flex: 1 1 50%;
+        margin-top: 0;
+    }
+    .ListaTareas-list {
+        margin-left: 7rem;
+    }
+}
